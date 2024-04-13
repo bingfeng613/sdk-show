@@ -1,0 +1,340 @@
+[
+  {
+    "sdk-name": "淘宝",
+    "data": "位置信息、应用列表、剪切板信息、设备信息（IMSI、IMEI、MAC地址、BSSID、SSID、IDFA、MEID、AndroidID）、手机存储权限、音频",
+    "purpose": [
+      "帮助用户使用淘宝账号安全登录医鹿平台",
+      "帮助用户浏览H5页面",
+      "H5框架的基础能力和服务",
+      "提供平台技术服务；"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "优酷（com.youku）",
+    "data": "应用列表",
+    "purpose": [
+      "为用户提供视频观看功能；"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "华为",
+    "data": "应用列表、设备信息（IMEI、BSSID、SSID、AndroidID、设备序列码、IDFA、MEID）、网络信息（IP地址、网关地址、掩码、DNS、WLAN接入点、Wi-Fi接入点、RSSI）",
+    "purpose": [
+      "向华为手机用户推送消息；"
+    ],
+    "url": [],
+    "ori-url": "https://consumer.huawei.com/cn/privacy/privacy-policy/",
+    "sdk-url": [],
+    "url-judge": "链接不为隐私政策",
+    "sdk-url-judge": null
+  },
+  {
+    "sdk-name": "小米",
+    "data": "应用列表、手机存储权限、设备信息（IMEI、AndroidID、IDFA、MEID、OAID）",
+    "purpose": [
+      "向小米手机用户推送消息；"
+    ],
+    "url": [
+      "https://dev.mi.com/console/doc/detail?pId=1822"
+    ],
+    "ori-url": "https://dev.mi.com/console/doc/detail?pId=1822",
+    "sdk-url": [
+      "https://dev.mi.com/console/doc/detail?pId=1822"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "Vivo",
+    "data": "应用列表、设备信息（OAID）、手机存储信息",
+    "purpose": [
+      "向vivo手机用户推送消息；"
+    ],
+    "url": [
+      "https://www.vivo.com.cn/about-vivo/privacy-policy"
+    ],
+    "ori-url": "https://www.vivo.com.cn/about-vivo/privacy-policy",
+    "sdk-url": [],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "链接不为sdk隐私政策"
+  },
+  {
+    "sdk-name": "Oppo",
+    "data": "无",
+    "purpose": [
+      "用于向OPPO手机用户推送消息"
+    ],
+    "url": [
+      "https://security.oppo.com/cn/privacy.html"
+    ],
+    "ori-url": "https://security.oppo.com/cn/privacy.html",
+    "sdk-url": [],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "链接不为sdk隐私政策"
+  },
+  {
+    "sdk-name": "支付宝",
+    "data": "设备账户信息、位置信息、应用列表、手机存储权限、设备信息（IMSI、IMEI、BSSID、SSID、SIM卡序列号(ICCID)、AndroidID、MAC地址、设备序列码、MEID、IDFA）、传感器信息(方向传感器、加速度计传感器、近程传感器、陀螺仪、磁场传感器)、网络信息(IP地址、WiFi状态、网关地址、掩码、DNS、WLAN接入点、Wi-Fi接入点、RSSI)、剪切板信息、音视频、图片、蓝牙硬件MAC地址、存储信息（读写外部存储、目录、空间状态）",
+    "purpose": [
+      "帮助用户完成付款",
+      "提供安全认证服务",
+      "登录医鹿平台",
+      "小程序框架服务；"
+    ],
+    "url": [
+      "https://render.alipay.com/p/c/k2cx0tg8"
+    ],
+    "ori-url": "https://render.alipay.com/p/c/k2cx0tg8",
+    "sdk-url": [
+      "https://render.alipay.com/p/c/k2cx0tg8"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "高德地图",
+    "data": "位置信息、应用列表、设备信息（IMSI、IMEI、MAC、BSSID、SSID、IDFA、AndroidID、MEID、OAID）、网络信息（WiFi信息、RSSI）、手机存储权限、传感器信息（方向传感器、压力传感器(气压计)、旋转矢量传感器、加速度计传感器、运动检测传感器）",
+    "purpose": [
+      "基于位置的服务",
+      "使用地图显示服务；"
+    ],
+    "url": [
+      "https://lbs.amap.com/home/privacy/"
+    ],
+    "ori-url": "https://lbs.amap.com/home/privacy/",
+    "sdk-url": [
+      "https://lbs.amap.com/home/privacy/"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "阿里巴巴",
+    "data": "位置信息、设备信息（IMSI、IMEI、MAC地址、BSSID、SSID、AndroidID、IDFA、SIM卡序列号(ICCID)、MEID、OAID）、手机存储权限、应用列表、传感器信息(光线传感器、计步器、方向传感器、加速度计传感器、近程传感器、陀螺仪、磁场传感器)、网络信息(IP地址、网关地址、掩码、DNS、WLAN接入点、Wi-Fi接入点、WiFi状态、RSSI)、音视频、图片、蓝牙硬件MAC地址、存储信息（读写外部存储、目录、空间状态）",
+    "purpose": [
+      "用于账号安全环境监测和基于淘宝平台的小程序框架服务"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_b2b/suit_bu1_b2b201703271337_94551.html"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_b2b/suit_bu1_b2b201703271337_94551.html",
+    "sdk-url": [],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "链接不为sdk隐私政策"
+  },
+  {
+    "sdk-name": "腾讯",
+    "data": "位置信息、应用列表、设备信息（SIM卡序列号(ICCID)、IMEI、MAC地址、AndroidID、MEID、IDFA）、手机存储权限",
+    "purpose": [
+      "用于帮助用户将信息分享至微信",
+      "QQ；实现微信",
+      "QQ登录"
+    ],
+    "url": [
+      "https://privacy.qq.com/policy/tencent-privacypolicy"
+    ],
+    "ori-url": "https://privacy.qq.com/policy/tencent-privacypolicy",
+    "sdk-url": [],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "链接不为sdk隐私政策"
+  },
+  {
+    "sdk-name": "钉钉",
+    "data": "设备信息（BSSID、SSID、IDFA）、RSSI、手机存储信息",
+    "purpose": [
+      "帮助用户分享内容至钉钉"
+    ],
+    "url": [
+      "https://page.dingtalk.com/wow/dingtalk/act/privacypolicycn?wh_biz=tm"
+    ],
+    "ori-url": "https://page.dingtalk.com/wow/dingtalk/act/privacypolicycn?wh_biz=tm",
+    "sdk-url": [
+      "https://page.dingtalk.com/wow/dingtalk/act/privacypolicycn?wh_biz=tm"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "UC（com.efs、com.uc、com.llvo、com.uc.channelsdk）",
+    "data": "应用列表、位置信息、设备信息（IMSI、IMEI、AndroidID、MAC地址、IDFA、MEID）、手机存储权限、剪切板信息、图片、视频",
+    "purpose": [
+      "提供客户端配置功能",
+      "受委托提供网页浏览服务",
+      "应用崩溃监测服务以及视频转码服务",
+      "提供渠道分析服务"
+    ],
+    "url": [
+      "https://www.uc.cn/about/privacy/#about-content"
+    ],
+    "ori-url": "https://www.uc.cn/about/privacy/#about-content",
+    "sdk-url": [],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "链接不为sdk隐私政策"
+  },
+  {
+    "sdk-name": "阿里云",
+    "data": "应用列表、设备信息（IMEI、MAC地址、AndroidID、MEID、IDFA）、手机存储权限",
+    "purpose": [
+      "提供域名解析服务",
+      "建立网络连接",
+      "加速网络访问",
+      "直播推拉流",
+      "音视频通话服务"
+    ],
+    "url": [
+      "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html"
+    ],
+    "ori-url": "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html",
+    "sdk-url": [
+      "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "淘宝登录模块",
+    "data": "设备信息（IMEI、IMSI、SIM、MAC、BSSID、SSID、IDFA）、位置信息、应用列表、音频",
+    "purpose": [
+      "帮助用户使用淘宝账号登录",
+      "将信息分享至淘宝"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "QQ互联",
+    "data": "设备信息（IMEI、SIM卡序列号(ICCID)、MAC、android_id）、应用列表、位置信息、手机存储权限",
+    "purpose": [
+      "用于帮助用户将信息分享至QQ",
+      "QQ联合登录"
+    ],
+    "url": [
+      "https://wiki.connect.qq.com/qq%e4%ba%92%e8%81%94sdk%e9%9a%90%e7%a7%81%e4%bf%9d%e6%8a%a4%e5%a3%b0%e6%98%8e"
+    ],
+    "ori-url": "https://wiki.connect.qq.com/qq%e4%ba%92%e8%81%94sdk%e9%9a%90%e7%a7%81%e4%bf%9d%e6%8a%a4%e5%a3%b0%e6%98%8e",
+    "sdk-url": [
+      "https://wiki.connect.qq.com/qq%e4%ba%92%e8%81%94sdk%e9%9a%90%e7%a7%81%e4%bf%9d%e6%8a%a4%e5%a3%b0%e6%98%8e"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "UT（com.ta.utdid2）",
+    "data": "设备信息（IMEI、ANDROIDID、MEID、IDFA）、应用列表、手机存储权限、存储信息（读写外部存储、目录、空间状态）",
+    "purpose": [
+      "统计分析"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202110291512_80686.html"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202110291512_80686.html",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202110291512_80686.html"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "魅族",
+    "data": "设备信息（IMEI、MEID）、位置信息、应用列表、手机存储信息",
+    "purpose": [
+      "向魅族手机用户推送消息"
+    ],
+    "url": [],
+    "ori-url": "https://www.meizu.com/legal.html?spm=a1zaa.8161610.0.0.527c44a6SJYYnq",
+    "sdk-url": [],
+    "url-judge": "链接不为隐私政策",
+    "sdk-url-judge": null
+  },
+  {
+    "sdk-name": "Mtop",
+    "data": "应用列表，设备信息（BSSID、SSID、IMEI,AndroidID,MAC地址，IMSI）、手机存储",
+    "purpose": [
+      "淘宝开放平台技术服务"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "淘宝Agoo推送",
+    "data": "应用列表，MAC地址",
+    "purpose": [
+      "淘宝开放平台技术服务"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "阿里安全（com.alibaba.one、com.alibaba.mobsec）",
+    "data": "设备标识符（IMEI、MAC、BSSID、SSID、AndroidID）、运营商信息",
+    "purpose": [
+      "用于App运行",
+      "网络请求",
+      "账号注册及登录等安全防护"
+    ],
+    "url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202101081802_49105.html"
+    ],
+    "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202101081802_49105.html",
+    "sdk-url": [
+      "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202101081802_49105.html"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  },
+  {
+    "sdk-name": "阿里云OSS存储SDK",
+    "data": "手机存储信息",
+    "purpose": [
+      "提供文件上传下载服务"
+    ],
+    "url": [
+      "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html?spm=5176.10695662.7y9jhqsfz.86.17883475PKzAAQ"
+    ],
+    "ori-url": "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html?spm=5176.10695662.7y9jhqsfz.86.17883475PKzAAQ",
+    "sdk-url": [
+      "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html?spm=5176.10695662.7y9jhqsfz.86.17883475PKzAAQ"
+    ],
+    "url-judge": "是隐私政策",
+    "sdk-url-judge": "是sdk隐私政策"
+  }
+]
