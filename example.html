@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>心智图示例</title>
+    <title>sdk展示</title>
     <link href="codebase/diagram.css" rel="stylesheet" />
     <link
       href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css"
@@ -35,9 +35,12 @@
   </head>
   <body>
     <div id="controls">
-      <input type="text" id="searchValue" placeholder="输入搜索内容" />
-      <button onclick="filterDiagram()">搜索</button>
+      <select id="sdkFilter">
+        <option value="">全部</option>
+        <!-- Options will be added dynamically -->
+      </select>
     </div>
+
     <div id="diagram"></div>
     <script>
       const diagram = new dhx.Diagram("diagram", {
@@ -62,425 +65,425 @@
       });
 
       let dataset = [
-    {
-        "id": "1",
-        "text": "sdk展示根节点（可换名）",
-        "fill": "#0288D1",
-        "fontColor": "#FFFFFF",
-        "stroke": "#0288D1",
-        "fontWeight": "bold"
-    },
-    {
-        "id": "2",
-        "text": "淘宝",
-        "parent": "1",
-        "fill": "#11B3A5",
-        "fontColor": "#FFFFFF",
-        "stroke": "#11B3A5",
-        "dir": "verticalRight",
-        "headerColor": "#607D8B",
-        "fontWeight": "bold"
-    },
-    {
-        "from": "1",
-        "to": "2",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1",
-        "text": "数据项",
-        "parent": "2",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2",
-        "to": "2.1",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.1",
-        "text": "位置信息",
-        "parent": "2.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1",
-        "to": "2.1.1",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.2",
-        "text": "应用列表",
-        "parent": "2.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1",
-        "to": "2.1.2",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.3",
-        "text": "剪切板信息",
-        "parent": "2.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1",
-        "to": "2.1.3",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4",
-        "text": "设备信息",
-        "parent": "2.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1",
-        "to": "2.1.4",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.1",
-        "text": "IMSI",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.1",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.2",
-        "text": "IMEI",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.2",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.3",
-        "text": "MAC地址",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.3",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.4",
-        "text": "BSSID",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.4",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.5",
-        "text": "SSID",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.5",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.6",
-        "text": "IDFA",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.6",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.7",
-        "text": "MEID",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.7",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.4.8",
-        "text": "AndroidID",
-        "parent": "2.1.4",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1.4",
-        "to": "2.1.4.8",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.5",
-        "text": "手机存储权限",
-        "parent": "2.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1",
-        "to": "2.1.5",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.1.6",
-        "text": "音频",
-        "parent": "2.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "2.1",
-        "to": "2.1.6",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "2.2",
-        "type": "customNode",
-        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
-        "parent": "2"
-    },
-    {
-        "from": "2",
-        "to": "2.2",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "3",
-        "text": "优酷（com.youku）",
-        "parent": "1",
-        "fill": "#11B3A5",
-        "fontColor": "#FFFFFF",
-        "stroke": "#11B3A5",
-        "dir": "verticalRight",
-        "headerColor": "#607D8B",
-        "fontWeight": "bold"
-    },
-    {
-        "from": "1",
-        "to": "3",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "3.1",
-        "text": "数据项",
-        "parent": "3",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "3",
-        "to": "3.1",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "3.1.1",
-        "text": "应用列表",
-        "parent": "3.1",
-        "fill": "#fff",
-        "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
-        "dir": "verticalRight",
-        "headerColor": "#00C7B5",
-        "strokeType": "line"
-    },
-    {
-        "from": "3.1",
-        "to": "3.1.1",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    },
-    {
-        "id": "3.2",
-        "type": "customNode",
-        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html",
-        "parent": "3"
-    },
-    {
-        "from": "3",
-        "to": "3.2",
-        "type": "line",
-        "connectType": "curved",
-        "stroke": "#CCC",
-        "strokeWidth": 2,
-        "cornersRadius": 0
-    }
-]; // 用于存储加载的数据
+        {
+          id: "1",
+          text: "sdk展示根节点（可换名）",
+          fill: "#0288D1",
+          fontColor: "#FFFFFF",
+          stroke: "#0288D1",
+          fontWeight: "bold",
+        },
+        {
+          id: "2",
+          text: "淘宝",
+          parent: "1",
+          fill: "#11B3A5",
+          fontColor: "#FFFFFF",
+          stroke: "#11B3A5",
+          dir: "verticalRight",
+          headerColor: "#607D8B",
+          fontWeight: "bold",
+        },
+        {
+          from: "1",
+          to: "2",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1",
+          text: "数据项",
+          parent: "2",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2",
+          to: "2.1",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.1",
+          text: "位置信息",
+          parent: "2.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1",
+          to: "2.1.1",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.2",
+          text: "应用列表",
+          parent: "2.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1",
+          to: "2.1.2",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.3",
+          text: "剪切板信息",
+          parent: "2.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1",
+          to: "2.1.3",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4",
+          text: "设备信息",
+          parent: "2.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1",
+          to: "2.1.4",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.1",
+          text: "IMSI",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.1",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.2",
+          text: "IMEI",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.2",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.3",
+          text: "MAC地址",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.3",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.4",
+          text: "BSSID",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.4",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.5",
+          text: "SSID",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.5",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.6",
+          text: "IDFA",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.6",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.7",
+          text: "MEID",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.7",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.4.8",
+          text: "AndroidID",
+          parent: "2.1.4",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1.4",
+          to: "2.1.4.8",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.5",
+          text: "手机存储权限",
+          parent: "2.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1",
+          to: "2.1.5",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.1.6",
+          text: "音频",
+          parent: "2.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "2.1",
+          to: "2.1.6",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "2.2",
+          type: "customNode",
+          url: "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+          parent: "2",
+        },
+        {
+          from: "2",
+          to: "2.2",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "3",
+          text: "优酷（com.youku）",
+          parent: "1",
+          fill: "#11B3A5",
+          fontColor: "#FFFFFF",
+          stroke: "#11B3A5",
+          dir: "verticalRight",
+          headerColor: "#607D8B",
+          fontWeight: "bold",
+        },
+        {
+          from: "1",
+          to: "3",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "3.1",
+          text: "数据项",
+          parent: "3",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "3",
+          to: "3.1",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "3.1.1",
+          text: "应用列表",
+          parent: "3.1",
+          fill: "#fff",
+          fontColor: "rgba(0,0,0,0.70)",
+          stroke: "#00C7B5",
+          dir: "verticalRight",
+          headerColor: "#00C7B5",
+          strokeType: "line",
+        },
+        {
+          from: "3.1",
+          to: "3.1.1",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+        {
+          id: "3.2",
+          type: "customNode",
+          url: "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html",
+          parent: "3",
+        },
+        {
+          from: "3",
+          to: "3.2",
+          type: "line",
+          connectType: "curved",
+          stroke: "#CCC",
+          strokeWidth: 2,
+          cornersRadius: 0,
+        },
+      ]; // 用于存储加载的数据
 
       diagram.data.parse(dataset); // 初始加载全数据
 
@@ -493,26 +496,90 @@
       //   });
 
       // 过滤并更新图形
+      const sdkFilter = document.getElementById("sdkFilter");
+      // 过滤数据集，排除id中含有"."的项以及id等于"1"的项
+      const validItems = dataset.filter(
+        (item) => !item.id.includes(".") && item.id !== "1"
+      );
+      // 从过滤后的数据中提取text属性，用于填充下拉列表，并确保这些名字是唯一的
+      const uniqueSdkNames = [
+        ...new Set(validItems.map((item) => item.text)),
+      ].sort();
+      // 添加sdk-name作为搜索项
+      uniqueSdkNames.forEach((sdk) => {
+        let option = new Option(sdk, sdk);
+        sdkFilter.appendChild(option);
+      });
+      // 选中即搜索
+      sdkFilter.addEventListener("change", function () {
+        filterDiagram();
+      });
+
+      // 过滤函数
       function filterDiagram() {
-        const searchValue = document
-          .getElementById("searchValue")
-          .value.toLowerCase();
-        if (!searchValue) {
-          diagram.data.parse(dataset); // 没有输入时加载全数据
-          return;
+        const selectedSdk = sdkFilter.value; // 获取选中的sdk-name
+        console.log("Selected SDK:", selectedSdk);
+
+        let selectedNodes = new Set(); // 存储符合条件的节点ID
+        let nodesToProcess = []; // 用于迭代处理的节点队列
+
+        // 首先找到直接符合条件的节点
+        dataset.forEach((item) => {
+          if (!selectedSdk || item.text === selectedSdk) {
+            selectedNodes.add(item.id);
+            nodesToProcess.push(item); // 将符合条件的节点加入处理队列
+          }
+        });
+
+        console.log("Initial matched nodes:", selectedNodes);
+
+        // 使用队列处理所有相关的父节点和子节点，直到没有新节点可以添加
+        while (nodesToProcess.length > 0) {
+          const currentItem = nodesToProcess.shift(); // 取出一个节点进行处理
+
+          // 添加所有子节点
+          dataset.forEach((item) => {
+            if (item.parent === currentItem.id && !selectedNodes.has(item.id)) {
+              selectedNodes.add(item.id);
+              nodesToProcess.push(item); // 添加新发现的节点到队列
+            }
+          });
+
+          // 如果当前项不是根节点，则尝试添加其父节点
+          if (
+            currentItem.parent &&
+            currentItem.parent !== "1" &&
+            !selectedNodes.has(currentItem.parent)
+          ) {
+            const parentItem = dataset.find(
+              (item) => item.id === currentItem.parent
+            );
+            if (parentItem) {
+              selectedNodes.add(currentItem.parent);
+              nodesToProcess.push(parentItem); // 添加父节点到队列
+            }
+          }
         }
+        // 最后确保根节点总是被添加
+        selectedNodes.add("1");
 
-        // 只根据 "text" 字段过滤，并确保 "text" 字段存在
-        const filteredData = dataset.filter(
-          (item) =>
-            item.text &&
-            typeof item.text === "string" &&
-            item.text.toLowerCase().includes(searchValue)
-        );
+        console.log("All connected nodes:", selectedNodes);
 
-        diagram.data.parse(filteredData);
+        // 过滤数据集，包括所有找到的符合条件的节点及其连接
+        let filteredData = dataset.filter((item) => {
+          return (
+            selectedNodes.has(item.id) ||
+            (item.from &&
+              selectedNodes.has(item.from) &&
+              item.to &&
+              selectedNodes.has(item.to))
+          );
+        });
+
+        diagram.data.parse(filteredData); // 使用过滤后的数据重新加载图形
       }
     </script>
+
     <style>
       .dhx_diagram,
       .dhx_sample-controls {
