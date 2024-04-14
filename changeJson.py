@@ -39,42 +39,10 @@ def parse_data(data):
     print(items)
     return items
 
+file_path = "beforeTreeData.json"
+with open(file_path, "r", encoding="utf-8") as file:
+    original_data = json.load(file)
 
-original_data = [
-    {
-        "sdk-name": "淘宝",
-        "data": "位置信息、应用列表、剪切板信息、设备信息（IMSI、IMEI、MAC地址、BSSID、SSID、IDFA、MEID、AndroidID）、手机存储权限、音频",
-        "purpose": [
-            "帮助用户使用淘宝账号安全登录医鹿平台",
-            "帮助用户浏览H5页面",
-            "H5框架的基础能力和服务",
-            "提供平台技术服务；",
-        ],
-        "url": [
-            "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
-        ],
-        "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
-        "sdk-url": [
-            "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK"
-        ],
-        "url-judge": "是隐私政策",
-        "sdk-url-judge": "是sdk隐私政策",
-    },
-    {
-        "sdk-name": "优酷（com.youku）",
-        "data": "应用列表",
-        "purpose": ["为用户提供视频观看功能；"],
-        "url": [
-            "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html"
-        ],
-        "ori-url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html",
-        "sdk-url": [
-            "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html"
-        ],
-        "url-judge": "是隐私政策",
-        "sdk-url-judge": "是sdk隐私政策",
-    },
-]
 
 # Resetting the mind map data structure and IDs
 mind_map = [
@@ -95,6 +63,9 @@ for sdk in original_data:
     # start from id=2
     # add sdk-name entry
     sdk_id = str(next_id)
+    # 使用 ID 的奇偶性来决定节点的方向
+    direction = "verticalRight" if int(sdk_id) % 2 == 0 else "verticalLeft"
+
     mind_map.append(
         {
             "id": sdk_id,
@@ -103,7 +74,7 @@ for sdk in original_data:
             "fill": "#11B3A5",
             "fontColor": "#FFFFFF",
             "stroke": "#11B3A5",
-            "dir": "verticalRight",
+            "dir": direction,
             "headerColor": "#607D8B",
             "fontWeight": "bold",
         }
@@ -131,9 +102,9 @@ for sdk in original_data:
             "fill": "#fff",
             "fontColor": "rgba(0,0,0,0.70)",
             "stroke": "#00C7B5",
-            "dir": "verticalRight",
             "headerColor": "#00C7B5",
             "strokeType": "line",
+            "open":False
         }
     )
     mind_map.append(
@@ -162,7 +133,6 @@ for sdk in original_data:
                 "fill": "#fff",
                 "fontColor": "rgba(0,0,0,0.70)",
                 "stroke": "#00C7B5",
-                "dir": "verticalRight",
                 "headerColor": "#00C7B5",
                 "strokeType": "line",
             }
@@ -193,7 +163,6 @@ for sdk in original_data:
                         "fill": "#fff",
                         "fontColor": "rgba(0,0,0,0.70)",
                         "stroke": "#00C7B5",
-                        "dir": "verticalRight",
                         "headerColor": "#00C7B5",
                         "strokeType": "line",
                     }
@@ -217,25 +186,30 @@ for sdk in original_data:
     # add url link
     sdk_data_id_loc2 += 1
     sdk_url_id = str(next_id) + "." + str(sdk_data_id_loc2)
-    mind_map.append(
-        {
-            "id": sdk_url_id,
-            "type": "customNode",
-            "url": sdk["url"][0],
-            "parent": sdk_id,
-        }
-    )
-    mind_map.append(
-        {
-            "from": sdk_id,
-            "to": sdk_url_id,
-            "type": "line",
-            "connectType": "curved",
-            "stroke": "#CCC",
-            "strokeWidth": 2,
-            "cornersRadius": 0,
-        }
-    )
+    # 检查 URL 列表是否为空
+    if sdk["url"]:
+        mind_map.append(
+            {
+                "id": sdk_url_id,
+                "type": "customNode",
+                "url": sdk["url"][0],  # 安全地访问第一个元素
+                "parent": sdk_id,
+            }
+        )
+        mind_map.append(
+            {
+                "from": sdk_id,
+                "to": sdk_url_id,
+                "type": "line",
+                "connectType": "curved",
+                "stroke": "#CCC",
+                "strokeWidth": 2,
+                "cornersRadius": 0,
+            }
+        )
+    else:
+        # URL 列表为空时的处理代码，例如可以跳过或添加默认URL
+        print("URL列表为空，跳过添加URL节点。")
 
     next_id += 1
 

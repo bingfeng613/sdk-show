@@ -35,6 +35,13 @@
   </head>
   <body>
     <div id="controls">
+      <input
+        type="number"
+        id="topNFilter"
+        placeholder="输入数字显示前N的SDK"
+        min="1"
+        style="margin-right: 10px"
+      />
       <select id="sdkFilter">
         <option value="">全部</option>
         <!-- Options will be added dynamically -->
@@ -63,427 +70,5436 @@
           height: 50,
         },
       });
-
+      // 展示的数据集的位置
       let dataset = [
-        {
-          id: "1",
-          text: "sdk展示根节点（可换名）",
-          fill: "#0288D1",
-          fontColor: "#FFFFFF",
-          stroke: "#0288D1",
-          fontWeight: "bold",
-        },
-        {
-          id: "2",
-          text: "淘宝",
-          parent: "1",
-          fill: "#11B3A5",
-          fontColor: "#FFFFFF",
-          stroke: "#11B3A5",
-          dir: "verticalRight",
-          headerColor: "#607D8B",
-          fontWeight: "bold",
-        },
-        {
-          from: "1",
-          to: "2",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1",
-          text: "数据项",
-          parent: "2",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2",
-          to: "2.1",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.1",
-          text: "位置信息",
-          parent: "2.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1",
-          to: "2.1.1",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.2",
-          text: "应用列表",
-          parent: "2.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1",
-          to: "2.1.2",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.3",
-          text: "剪切板信息",
-          parent: "2.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1",
-          to: "2.1.3",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4",
-          text: "设备信息",
-          parent: "2.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1",
-          to: "2.1.4",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.1",
-          text: "IMSI",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.1",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.2",
-          text: "IMEI",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.2",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.3",
-          text: "MAC地址",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.3",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.4",
-          text: "BSSID",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.4",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.5",
-          text: "SSID",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.5",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.6",
-          text: "IDFA",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.6",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.7",
-          text: "MEID",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.7",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.4.8",
-          text: "AndroidID",
-          parent: "2.1.4",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1.4",
-          to: "2.1.4.8",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.5",
-          text: "手机存储权限",
-          parent: "2.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1",
-          to: "2.1.5",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.1.6",
-          text: "音频",
-          parent: "2.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "2.1",
-          to: "2.1.6",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "2.2",
-          type: "customNode",
-          url: "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
-          parent: "2",
-        },
-        {
-          from: "2",
-          to: "2.2",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "3",
-          text: "优酷（com.youku）",
-          parent: "1",
-          fill: "#11B3A5",
-          fontColor: "#FFFFFF",
-          stroke: "#11B3A5",
-          dir: "verticalRight",
-          headerColor: "#607D8B",
-          fontWeight: "bold",
-        },
-        {
-          from: "1",
-          to: "3",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "3.1",
-          text: "数据项",
-          parent: "3",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "3",
-          to: "3.1",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "3.1.1",
-          text: "应用列表",
-          parent: "3.1",
-          fill: "#fff",
-          fontColor: "rgba(0,0,0,0.70)",
-          stroke: "#00C7B5",
-          dir: "verticalRight",
-          headerColor: "#00C7B5",
-          strokeType: "line",
-        },
-        {
-          from: "3.1",
-          to: "3.1.1",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-        {
-          id: "3.2",
-          type: "customNode",
-          url: "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html",
-          parent: "3",
-        },
-        {
-          from: "3",
-          to: "3.2",
-          type: "line",
-          connectType: "curved",
-          stroke: "#CCC",
-          strokeWidth: 2,
-          cornersRadius: 0,
-        },
-      ]; // 用于存储加载的数据
+    {
+        "id": "1",
+        "text": "sdk展示根节点（可换名）",
+        "fill": "#0288D1",
+        "fontColor": "#FFFFFF",
+        "stroke": "#0288D1",
+        "fontWeight": "bold"
+    },
+    {
+        "id": "2",
+        "text": "淘宝",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1",
+        "text": "数据项",
+        "parent": "2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "2",
+        "to": "2.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.1",
+        "text": "位置信息",
+        "parent": "2.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.2",
+        "text": "应用列表",
+        "parent": "2.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.3",
+        "text": "剪切板信息",
+        "parent": "2.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4",
+        "text": "设备信息",
+        "parent": "2.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.1",
+        "text": "IMSI",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.2",
+        "text": "IMEI",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.3",
+        "text": "MAC地址",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.4",
+        "text": "BSSID",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.5",
+        "text": "SSID",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.6",
+        "text": "IDFA",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.7",
+        "text": "MEID",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.4.8",
+        "text": "AndroidID",
+        "parent": "2.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1.4",
+        "to": "2.1.4.8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.5",
+        "text": "手机存储权限",
+        "parent": "2.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.6",
+        "text": "音频",
+        "parent": "2.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+        "parent": "2"
+    },
+    {
+        "from": "2",
+        "to": "2.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "3",
+        "text": "优酷（com.youku）",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "3.1",
+        "text": "数据项",
+        "parent": "3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "3",
+        "to": "3.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "3.1.1",
+        "text": "应用列表",
+        "parent": "3.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "3.1",
+        "to": "3.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "3.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_unification/suit_bu1_unification202005141916_91107.html",
+        "parent": "3"
+    },
+    {
+        "from": "3",
+        "to": "3.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4",
+        "text": "华为",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1",
+        "text": "数据项",
+        "parent": "4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "4",
+        "to": "4.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.1",
+        "text": "应用列表",
+        "parent": "4.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1",
+        "to": "4.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2",
+        "text": "设备信息",
+        "parent": "4.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1",
+        "to": "4.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.1",
+        "text": "IMEI",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.2",
+        "text": "BSSID",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.3",
+        "text": "SSID",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.4",
+        "text": "AndroidID",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.5",
+        "text": "设备序列码",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.6",
+        "text": "IDFA",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.2.7",
+        "text": "MEID",
+        "parent": "4.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.2",
+        "to": "4.1.2.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3",
+        "text": "网络信息",
+        "parent": "4.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1",
+        "to": "4.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.1",
+        "text": "IP地址",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.2",
+        "text": "网关地址",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.3",
+        "text": "掩码",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.4",
+        "text": "DNS",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.5",
+        "text": "WLAN接入点",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.6",
+        "text": "Wi-Fi接入点",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.3.7",
+        "text": "RSSI",
+        "parent": "4.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "4.1.3",
+        "to": "4.1.3.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5",
+        "text": "小米",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1",
+        "text": "数据项",
+        "parent": "5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "5",
+        "to": "5.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.1",
+        "text": "应用列表",
+        "parent": "5.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1",
+        "to": "5.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.2",
+        "text": "手机存储权限",
+        "parent": "5.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1",
+        "to": "5.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.3",
+        "text": "设备信息",
+        "parent": "5.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1",
+        "to": "5.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.3.1",
+        "text": "IMEI",
+        "parent": "5.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1.3",
+        "to": "5.1.3.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.3.2",
+        "text": "AndroidID",
+        "parent": "5.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1.3",
+        "to": "5.1.3.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.3.3",
+        "text": "IDFA",
+        "parent": "5.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1.3",
+        "to": "5.1.3.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.3.4",
+        "text": "MEID",
+        "parent": "5.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1.3",
+        "to": "5.1.3.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.3.5",
+        "text": "OAID",
+        "parent": "5.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "5.1.3",
+        "to": "5.1.3.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.2",
+        "type": "customNode",
+        "url": "https://dev.mi.com/console/doc/detail?pId=1822",
+        "parent": "5"
+    },
+    {
+        "from": "5",
+        "to": "5.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6",
+        "text": "Vivo",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6.1",
+        "text": "数据项",
+        "parent": "6",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "6",
+        "to": "6.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6.1.1",
+        "text": "应用列表",
+        "parent": "6.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "6.1",
+        "to": "6.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6.1.2",
+        "text": "设备信息",
+        "parent": "6.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "6.1",
+        "to": "6.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6.1.2.1",
+        "text": "OAID",
+        "parent": "6.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "6.1.2",
+        "to": "6.1.2.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6.1.3",
+        "text": "手机存储信息",
+        "parent": "6.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "6.1",
+        "to": "6.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "6.2",
+        "type": "customNode",
+        "url": "https://www.vivo.com.cn/about-vivo/privacy-policy",
+        "parent": "6"
+    },
+    {
+        "from": "6",
+        "to": "6.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "7",
+        "text": "Oppo",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "7.1",
+        "text": "数据项",
+        "parent": "7",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "7",
+        "to": "7.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "7.1.1",
+        "text": "无",
+        "parent": "7.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "7.1",
+        "to": "7.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "7.2",
+        "type": "customNode",
+        "url": "https://security.oppo.com/cn/privacy.html",
+        "parent": "7"
+    },
+    {
+        "from": "7",
+        "to": "7.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8",
+        "text": "支付宝",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1",
+        "text": "数据项",
+        "parent": "8",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "8",
+        "to": "8.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.1",
+        "text": "设备账户信息",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.2",
+        "text": "位置信息",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.3",
+        "text": "应用列表",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.4",
+        "text": "手机存储权限",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5",
+        "text": "设备信息",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.1",
+        "text": "IMSI",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.2",
+        "text": "IMEI",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.3",
+        "text": "BSSID",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.4",
+        "text": "SSID",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.5",
+        "text": "SIM卡序列号(ICCID)",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.6",
+        "text": "AndroidID",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.7",
+        "text": "MAC地址",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.8",
+        "text": "设备序列码",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.9",
+        "text": "MEID",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.9",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.5.10",
+        "text": "IDFA",
+        "parent": "8.1.5",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.5",
+        "to": "8.1.5.10",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.6",
+        "text": "传感器信息(方向传感器",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.7",
+        "text": "加速度计传感器",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.8",
+        "text": "近程传感器",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.9",
+        "text": "陀螺仪",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.9",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.10",
+        "text": "磁场传感器)",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.10",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.11",
+        "text": "网络信息(IP地址",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.11",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.12",
+        "text": "WiFi状态",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.12",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.13",
+        "text": "网关地址",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.13",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.14",
+        "text": "掩码",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.14",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.15",
+        "text": "DNS",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.15",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.16",
+        "text": "WLAN接入点",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.16",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.17",
+        "text": "Wi-Fi接入点",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.17",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.18",
+        "text": "RSSI)",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.18",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.19",
+        "text": "剪切板信息",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.19",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.20",
+        "text": "音视频",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.20",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.21",
+        "text": "图片",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.21",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.22",
+        "text": "蓝牙硬件MAC地址",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.22",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.23",
+        "text": "存储信息",
+        "parent": "8.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1",
+        "to": "8.1.23",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.23.1",
+        "text": "读写外部存储",
+        "parent": "8.1.23",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.23",
+        "to": "8.1.23.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.23.2",
+        "text": "目录",
+        "parent": "8.1.23",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.23",
+        "to": "8.1.23.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.1.23.3",
+        "text": "空间状态",
+        "parent": "8.1.23",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "8.1.23",
+        "to": "8.1.23.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "8.2",
+        "type": "customNode",
+        "url": "https://render.alipay.com/p/c/k2cx0tg8",
+        "parent": "8"
+    },
+    {
+        "from": "8",
+        "to": "8.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9",
+        "text": "高德地图",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "9",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1",
+        "text": "数据项",
+        "parent": "9",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "9",
+        "to": "9.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.1",
+        "text": "位置信息",
+        "parent": "9.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.2",
+        "text": "应用列表",
+        "parent": "9.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3",
+        "text": "设备信息",
+        "parent": "9.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.1",
+        "text": "IMSI",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.2",
+        "text": "IMEI",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.3",
+        "text": "MAC",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.4",
+        "text": "BSSID",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.5",
+        "text": "SSID",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.6",
+        "text": "IDFA",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.7",
+        "text": "AndroidID",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.8",
+        "text": "MEID",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.3.9",
+        "text": "OAID",
+        "parent": "9.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.3",
+        "to": "9.1.3.9",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.4",
+        "text": "网络信息",
+        "parent": "9.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.4.1",
+        "text": "WiFi信息",
+        "parent": "9.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.4",
+        "to": "9.1.4.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.4.2",
+        "text": "RSSI",
+        "parent": "9.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.4",
+        "to": "9.1.4.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.5",
+        "text": "手机存储权限",
+        "parent": "9.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.6",
+        "text": "传感器信息",
+        "parent": "9.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.6.1",
+        "text": "方向传感器",
+        "parent": "9.1.6",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.6",
+        "to": "9.1.6.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.6.2",
+        "text": "压力传感器(气压计)",
+        "parent": "9.1.6",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.6",
+        "to": "9.1.6.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.6.3",
+        "text": "旋转矢量传感器",
+        "parent": "9.1.6",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.6",
+        "to": "9.1.6.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.6.4",
+        "text": "加速度计传感器",
+        "parent": "9.1.6",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.6",
+        "to": "9.1.6.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.6.5",
+        "text": "运动检测传感器",
+        "parent": "9.1.6",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "9.1.6",
+        "to": "9.1.6.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.2",
+        "type": "customNode",
+        "url": "https://lbs.amap.com/home/privacy/",
+        "parent": "9"
+    },
+    {
+        "from": "9",
+        "to": "9.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10",
+        "text": "阿里巴巴",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "10",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1",
+        "text": "数据项",
+        "parent": "10",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "10",
+        "to": "10.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.1",
+        "text": "位置信息",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2",
+        "text": "设备信息",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.1",
+        "text": "IMSI",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.2",
+        "text": "IMEI",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.3",
+        "text": "MAC地址",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.4",
+        "text": "BSSID",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.5",
+        "text": "SSID",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.6",
+        "text": "AndroidID",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.7",
+        "text": "IDFA",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.8",
+        "text": "SIM卡序列号(ICCID)",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.9",
+        "text": "MEID",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.9",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.2.10",
+        "text": "OAID",
+        "parent": "10.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.2",
+        "to": "10.1.2.10",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.3",
+        "text": "手机存储权限",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.4",
+        "text": "应用列表",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.5",
+        "text": "传感器信息(光线传感器",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.6",
+        "text": "计步器",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.7",
+        "text": "方向传感器",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.8",
+        "text": "加速度计传感器",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.8",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.9",
+        "text": "近程传感器",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.9",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.10",
+        "text": "陀螺仪",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.10",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.11",
+        "text": "磁场传感器)",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.11",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.12",
+        "text": "网络信息(IP地址",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.12",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.13",
+        "text": "网关地址",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.13",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.14",
+        "text": "掩码",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.14",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.15",
+        "text": "DNS",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.15",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.16",
+        "text": "WLAN接入点",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.16",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.17",
+        "text": "Wi-Fi接入点",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.17",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.18",
+        "text": "WiFi状态",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.18",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.19",
+        "text": "RSSI)",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.19",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.20",
+        "text": "音视频",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.20",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.21",
+        "text": "图片",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.21",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.22",
+        "text": "蓝牙硬件MAC地址",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.22",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.23",
+        "text": "存储信息",
+        "parent": "10.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1",
+        "to": "10.1.23",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.23.1",
+        "text": "读写外部存储",
+        "parent": "10.1.23",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.23",
+        "to": "10.1.23.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.23.2",
+        "text": "目录",
+        "parent": "10.1.23",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.23",
+        "to": "10.1.23.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.1.23.3",
+        "text": "空间状态",
+        "parent": "10.1.23",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "10.1.23",
+        "to": "10.1.23.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "10.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_b2b/suit_bu1_b2b201703271337_94551.html",
+        "parent": "10"
+    },
+    {
+        "from": "10",
+        "to": "10.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11",
+        "text": "腾讯",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "11",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1",
+        "text": "数据项",
+        "parent": "11",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "11",
+        "to": "11.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.1",
+        "text": "位置信息",
+        "parent": "11.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1",
+        "to": "11.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.2",
+        "text": "应用列表",
+        "parent": "11.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1",
+        "to": "11.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3",
+        "text": "设备信息",
+        "parent": "11.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1",
+        "to": "11.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3.1",
+        "text": "SIM卡序列号(ICCID)",
+        "parent": "11.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1.3",
+        "to": "11.1.3.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3.2",
+        "text": "IMEI",
+        "parent": "11.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1.3",
+        "to": "11.1.3.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3.3",
+        "text": "MAC地址",
+        "parent": "11.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1.3",
+        "to": "11.1.3.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3.4",
+        "text": "AndroidID",
+        "parent": "11.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1.3",
+        "to": "11.1.3.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3.5",
+        "text": "MEID",
+        "parent": "11.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1.3",
+        "to": "11.1.3.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.3.6",
+        "text": "IDFA",
+        "parent": "11.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1.3",
+        "to": "11.1.3.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.4",
+        "text": "手机存储权限",
+        "parent": "11.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "11.1",
+        "to": "11.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.2",
+        "type": "customNode",
+        "url": "https://privacy.qq.com/policy/tencent-privacypolicy",
+        "parent": "11"
+    },
+    {
+        "from": "11",
+        "to": "11.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12",
+        "text": "钉钉",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "12",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1",
+        "text": "数据项",
+        "parent": "12",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "12",
+        "to": "12.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1.1",
+        "text": "设备信息",
+        "parent": "12.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "12.1",
+        "to": "12.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1.1.1",
+        "text": "BSSID",
+        "parent": "12.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "12.1.1",
+        "to": "12.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1.1.2",
+        "text": "SSID",
+        "parent": "12.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "12.1.1",
+        "to": "12.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1.1.3",
+        "text": "IDFA",
+        "parent": "12.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "12.1.1",
+        "to": "12.1.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1.2",
+        "text": "RSSI",
+        "parent": "12.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "12.1",
+        "to": "12.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.1.3",
+        "text": "手机存储信息",
+        "parent": "12.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "12.1",
+        "to": "12.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "12.2",
+        "type": "customNode",
+        "url": "https://page.dingtalk.com/wow/dingtalk/act/privacypolicycn?wh_biz=tm",
+        "parent": "12"
+    },
+    {
+        "from": "12",
+        "to": "12.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13",
+        "text": "UC（com.efs、com.uc、com.llvo、com.uc.channelsdk）",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "13",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1",
+        "text": "数据项",
+        "parent": "13",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "13",
+        "to": "13.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.1",
+        "text": "应用列表",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.2",
+        "text": "位置信息",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3",
+        "text": "设备信息",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3.1",
+        "text": "IMSI",
+        "parent": "13.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1.3",
+        "to": "13.1.3.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3.2",
+        "text": "IMEI",
+        "parent": "13.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1.3",
+        "to": "13.1.3.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3.3",
+        "text": "AndroidID",
+        "parent": "13.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1.3",
+        "to": "13.1.3.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3.4",
+        "text": "MAC地址",
+        "parent": "13.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1.3",
+        "to": "13.1.3.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3.5",
+        "text": "IDFA",
+        "parent": "13.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1.3",
+        "to": "13.1.3.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.3.6",
+        "text": "MEID",
+        "parent": "13.1.3",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1.3",
+        "to": "13.1.3.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.4",
+        "text": "手机存储权限",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.5",
+        "text": "剪切板信息",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.6",
+        "text": "图片",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.7",
+        "text": "视频",
+        "parent": "13.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.2",
+        "type": "customNode",
+        "url": "https://www.uc.cn/about/privacy/#about-content",
+        "parent": "13"
+    },
+    {
+        "from": "13",
+        "to": "13.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14",
+        "text": "阿里云",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "14",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1",
+        "text": "数据项",
+        "parent": "14",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "14",
+        "to": "14.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.1",
+        "text": "应用列表",
+        "parent": "14.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1",
+        "to": "14.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.2",
+        "text": "设备信息",
+        "parent": "14.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1",
+        "to": "14.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.2.1",
+        "text": "IMEI",
+        "parent": "14.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1.2",
+        "to": "14.1.2.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.2.2",
+        "text": "MAC地址",
+        "parent": "14.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1.2",
+        "to": "14.1.2.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.2.3",
+        "text": "AndroidID",
+        "parent": "14.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1.2",
+        "to": "14.1.2.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.2.4",
+        "text": "MEID",
+        "parent": "14.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1.2",
+        "to": "14.1.2.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.2.5",
+        "text": "IDFA",
+        "parent": "14.1.2",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1.2",
+        "to": "14.1.2.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.1.3",
+        "text": "手机存储权限",
+        "parent": "14.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "14.1",
+        "to": "14.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "14.2",
+        "type": "customNode",
+        "url": "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html",
+        "parent": "14"
+    },
+    {
+        "from": "14",
+        "to": "14.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15",
+        "text": "淘宝登录模块",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "15",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1",
+        "text": "数据项",
+        "parent": "15",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "15",
+        "to": "15.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1",
+        "text": "设备信息",
+        "parent": "15.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1",
+        "to": "15.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.1",
+        "text": "IMEI",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.2",
+        "text": "IMSI",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.3",
+        "text": "SIM",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.4",
+        "text": "MAC",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.5",
+        "text": "BSSID",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.6",
+        "text": "SSID",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.1.7",
+        "text": "IDFA",
+        "parent": "15.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1.1",
+        "to": "15.1.1.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.2",
+        "text": "位置信息",
+        "parent": "15.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1",
+        "to": "15.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.3",
+        "text": "应用列表",
+        "parent": "15.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1",
+        "to": "15.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.4",
+        "text": "音频",
+        "parent": "15.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "15.1",
+        "to": "15.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+        "parent": "15"
+    },
+    {
+        "from": "15",
+        "to": "15.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16",
+        "text": "QQ互联",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "16",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1",
+        "text": "数据项",
+        "parent": "16",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "16",
+        "to": "16.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.1",
+        "text": "设备信息",
+        "parent": "16.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1",
+        "to": "16.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.1.1",
+        "text": "IMEI",
+        "parent": "16.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1.1",
+        "to": "16.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.1.2",
+        "text": "SIM卡序列号(ICCID)",
+        "parent": "16.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1.1",
+        "to": "16.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.1.3",
+        "text": "MAC",
+        "parent": "16.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1.1",
+        "to": "16.1.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.1.4",
+        "text": "android_id",
+        "parent": "16.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1.1",
+        "to": "16.1.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.2",
+        "text": "应用列表",
+        "parent": "16.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1",
+        "to": "16.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.3",
+        "text": "位置信息",
+        "parent": "16.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1",
+        "to": "16.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.1.4",
+        "text": "手机存储权限",
+        "parent": "16.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "16.1",
+        "to": "16.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "16.2",
+        "type": "customNode",
+        "url": "https://wiki.connect.qq.com/qq%e4%ba%92%e8%81%94sdk%e9%9a%90%e7%a7%81%e4%bf%9d%e6%8a%a4%e5%a3%b0%e6%98%8e",
+        "parent": "16"
+    },
+    {
+        "from": "16",
+        "to": "16.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17",
+        "text": "UT（com.ta.utdid2）",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "17",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1",
+        "text": "数据项",
+        "parent": "17",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "17",
+        "to": "17.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.1",
+        "text": "设备信息",
+        "parent": "17.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1",
+        "to": "17.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.1.1",
+        "text": "IMEI",
+        "parent": "17.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.1",
+        "to": "17.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.1.2",
+        "text": "ANDROIDID",
+        "parent": "17.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.1",
+        "to": "17.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.1.3",
+        "text": "MEID",
+        "parent": "17.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.1",
+        "to": "17.1.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.1.4",
+        "text": "IDFA",
+        "parent": "17.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.1",
+        "to": "17.1.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.2",
+        "text": "应用列表",
+        "parent": "17.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1",
+        "to": "17.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.3",
+        "text": "手机存储权限",
+        "parent": "17.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1",
+        "to": "17.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.4",
+        "text": "存储信息",
+        "parent": "17.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1",
+        "to": "17.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.4.1",
+        "text": "读写外部存储",
+        "parent": "17.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.4",
+        "to": "17.1.4.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.4.2",
+        "text": "目录",
+        "parent": "17.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.4",
+        "to": "17.1.4.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.4.3",
+        "text": "空间状态",
+        "parent": "17.1.4",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "17.1.4",
+        "to": "17.1.4.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202110291512_80686.html",
+        "parent": "17"
+    },
+    {
+        "from": "17",
+        "to": "17.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18",
+        "text": "魅族",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "18",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1",
+        "text": "数据项",
+        "parent": "18",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "18",
+        "to": "18.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1.1",
+        "text": "设备信息",
+        "parent": "18.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "18.1",
+        "to": "18.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1.1.1",
+        "text": "IMEI",
+        "parent": "18.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "18.1.1",
+        "to": "18.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1.1.2",
+        "text": "MEID",
+        "parent": "18.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "18.1.1",
+        "to": "18.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1.2",
+        "text": "位置信息",
+        "parent": "18.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "18.1",
+        "to": "18.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1.3",
+        "text": "应用列表",
+        "parent": "18.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "18.1",
+        "to": "18.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "18.1.4",
+        "text": "手机存储信息",
+        "parent": "18.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "18.1",
+        "to": "18.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19",
+        "text": "Mtop",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "19",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1",
+        "text": "数据项",
+        "parent": "19",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "19",
+        "to": "19.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1.1",
+        "text": "应用列表，设备信息",
+        "parent": "19.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "19.1",
+        "to": "19.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1.1.1",
+        "text": "BSSID",
+        "parent": "19.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "19.1.1",
+        "to": "19.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1.1.2",
+        "text": "SSID",
+        "parent": "19.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "19.1.1",
+        "to": "19.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1.1.3",
+        "text": "IMEI,AndroidID,MAC地址，IMSI",
+        "parent": "19.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "19.1.1",
+        "to": "19.1.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1.2",
+        "text": "手机存储",
+        "parent": "19.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "19.1",
+        "to": "19.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+        "parent": "19"
+    },
+    {
+        "from": "19",
+        "to": "19.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "20",
+        "text": "淘宝Agoo推送",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "20",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "20.1",
+        "text": "数据项",
+        "parent": "20",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "20",
+        "to": "20.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "20.1.1",
+        "text": "应用列表，MAC地址",
+        "parent": "20.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "20.1",
+        "to": "20.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "20.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7ccvMkrK",
+        "parent": "20"
+    },
+    {
+        "from": "20",
+        "to": "20.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21",
+        "text": "阿里安全（com.alibaba.one、com.alibaba.mobsec）",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalLeft",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "21",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1",
+        "text": "数据项",
+        "parent": "21",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "21",
+        "to": "21.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.1",
+        "text": "设备标识符",
+        "parent": "21.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1",
+        "to": "21.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.1.1",
+        "text": "IMEI",
+        "parent": "21.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1.1",
+        "to": "21.1.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.1.2",
+        "text": "MAC",
+        "parent": "21.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1.1",
+        "to": "21.1.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.1.3",
+        "text": "BSSID",
+        "parent": "21.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1.1",
+        "to": "21.1.1.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.1.4",
+        "text": "SSID",
+        "parent": "21.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1.1",
+        "to": "21.1.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.1.5",
+        "text": "AndroidID",
+        "parent": "21.1.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1.1",
+        "to": "21.1.1.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.1.2",
+        "text": "运营商信息",
+        "parent": "21.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "21.1",
+        "to": "21.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "21.2",
+        "type": "customNode",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/suit_bu1_alibaba_group/suit_bu1_alibaba_group202101081802_49105.html",
+        "parent": "21"
+    },
+    {
+        "from": "21",
+        "to": "21.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "22",
+        "text": "阿里云OSS存储SDK",
+        "parent": "1",
+        "fill": "#11B3A5",
+        "fontColor": "#FFFFFF",
+        "stroke": "#11B3A5",
+        "dir": "verticalRight",
+        "headerColor": "#607D8B",
+        "fontWeight": "bold"
+    },
+    {
+        "from": "1",
+        "to": "22",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "22.1",
+        "text": "数据项",
+        "parent": "22",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line",
+        "open": false
+    },
+    {
+        "from": "22",
+        "to": "22.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "22.1.1",
+        "text": "手机存储信息",
+        "parent": "22.1",
+        "fill": "#fff",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#00C7B5",
+        "headerColor": "#00C7B5",
+        "strokeType": "line"
+    },
+    {
+        "from": "22.1",
+        "to": "22.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "22.2",
+        "type": "customNode",
+        "url": "http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html?spm=5176.10695662.7y9jhqsfz.86.17883475PKzAAQ",
+        "parent": "22"
+    },
+    {
+        "from": "22",
+        "to": "22.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    }
+]; // 用于存储加载的数据
 
       diagram.data.parse(dataset); // 初始加载全数据
 
@@ -495,7 +5511,59 @@
       //     diagram.data.parse(data); // 初始加载全数据
       //   });
 
-      // 过滤并更新图形
+			let curN = null // 选中的前n节点
+      // 根据数据量对sdk进行排序 统计每个SDK下的数据项数量并按数量进行排序
+      function countAndSortSdks() {
+        const counts = {};
+        dataset.forEach((item) => {
+          // 统计2.1.1 2.1.1.1 只要id包含前面2.1这种的就是数据项
+          // 需要将其2索引下的数量加1
+          const parts = item.id.split(".");
+          if (parts.length === 3 || parts.length === 4) {
+            const sdkId = parts[0];
+            if (!counts[sdkId]) {
+              counts[sdkId] = 0;
+            }
+            counts[sdkId]++;
+          }
+        });
+        console.log(counts);
+        const sortedSdks = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+        return sortedSdks;
+      }
+
+      // 根据排序的结果更新下拉菜单的选项
+      function updateSdkOptions(sortedSdks) {
+        const sdkFilter = document.getElementById("sdkFilter");
+        sdkFilter.innerHTML = '<option value="">全部</option>'; // Reset existing options
+        sortedSdks.forEach((sdk) => {
+          const sdkName = dataset.find((item) => item.id === sdk[0]).text;
+          let option = new Option(sdkName + ` (${sdk[1]})`, sdkName);
+          sdkFilter.appendChild(option);
+        });
+        console.log(sdkFilter);
+      }
+
+      // 当用户在输入框中输入数字时，根据输入值筛选出数据项最多的前N个SDK，并更新下拉菜单。如果输入不合法或者输入框为空，则显示所有SDK
+      // Event listener for selecting the top N SDKs
+      const topNInput = document.getElementById("topNFilter");
+      topNInput.addEventListener("input", function () {
+        const n = parseInt(this.value, 10);
+				curN = n; // 更新
+        const sortedSdks = countAndSortSdks();
+        if (!isNaN(n) && n > 0) {
+          const topSdkNames = sortedSdks
+            .slice(0, n)
+            .map((sdk) => dataset.find((item) => item.id === sdk[0]).text);
+          updateSdkOptions(sortedSdks.slice(0, n));
+          filterDiagram(topSdkNames); // 使用Top N SDK的名称来过滤图表
+        } else {
+          updateSdkOptions(sortedSdks);
+          filterDiagram(); // 没有特定数量时，使用默认过滤（可能是全部显示）
+        }
+      });
+
+      // 处理第二个过滤器
       const sdkFilter = document.getElementById("sdkFilter");
       // 过滤数据集，排除id中含有"."的项以及id等于"1"的项
       const validItems = dataset.filter(
@@ -512,40 +5580,56 @@
       });
       // 选中即搜索
       sdkFilter.addEventListener("change", function () {
-        filterDiagram();
+        filterDiagram([this.value].filter(Boolean)); // 使用当前选中的SDK更新图表
       });
 
       // 过滤函数
-      function filterDiagram() {
-        const selectedSdk = sdkFilter.value; // 获取选中的sdk-name
-        console.log("Selected SDK:", selectedSdk);
+      function filterDiagram(sdkList) {
+				console.log(sdkList)
+				// 选择全部的时候列表为空 且前面有数字选择 只显示前n个有效的sdk
+				if(sdkList=="" && curN!=null){
+        	const sortedSdks = countAndSortSdks();
+					const topSdkNames = sortedSdks
+            .slice(0, curN)
+            .map((sdk) => dataset.find((item) => item.id === sdk[0]).text);
+          updateSdkOptions(sortedSdks.slice(0, curN));
+          filterDiagram(topSdkNames); // 使用Top N SDK的名称来过滤图表
+					return
+				}
 
-        let selectedNodes = new Set(); // 存储符合条件的节点ID
-        let nodesToProcess = []; // 用于迭代处理的节点队列
+				// 选择全部的时候列表为空 但是前面没有数字选择  那么显示全部有效的sdk
+				if(sdkList =="" && curN==null){
+					const sortedSdks = countAndSortSdks();
+					const topSdkNames = sortedSdks
+            .slice(0, sortedSdks.length)
+            .map((sdk) => dataset.find((item) => item.id === sdk[0]).text);
+          updateSdkOptions(sortedSdks.slice(0, sortedSdks.length));
+          filterDiagram(topSdkNames); // 使用Top N SDK的名称来过滤图表
+					return
+				}
 
-        // 首先找到直接符合条件的节点
+        let selectedNodes = new Set();
+        let nodesToProcess = [];
+
+        // 如果有特定的SDK列表，则用它来过滤；否则，使用下拉框选择的SDK
+        const selectedSdks = sdkList || [sdkFilter.value];
+
+        // 遍历数据集，找到匹配的SDK节点
         dataset.forEach((item) => {
-          if (!selectedSdk || item.text === selectedSdk) {
+          if (selectedSdks.includes(item.text)) {
             selectedNodes.add(item.id);
-            nodesToProcess.push(item); // 将符合条件的节点加入处理队列
+            nodesToProcess.push(item);
           }
         });
 
-        console.log("Initial matched nodes:", selectedNodes);
-
-        // 使用队列处理所有相关的父节点和子节点，直到没有新节点可以添加
         while (nodesToProcess.length > 0) {
-          const currentItem = nodesToProcess.shift(); // 取出一个节点进行处理
-
-          // 添加所有子节点
+          const currentItem = nodesToProcess.shift();
           dataset.forEach((item) => {
             if (item.parent === currentItem.id && !selectedNodes.has(item.id)) {
               selectedNodes.add(item.id);
-              nodesToProcess.push(item); // 添加新发现的节点到队列
+              nodesToProcess.push(item);
             }
           });
-
-          // 如果当前项不是根节点，则尝试添加其父节点
           if (
             currentItem.parent &&
             currentItem.parent !== "1" &&
@@ -556,16 +5640,11 @@
             );
             if (parentItem) {
               selectedNodes.add(currentItem.parent);
-              nodesToProcess.push(parentItem); // 添加父节点到队列
+              nodesToProcess.push(parentItem);
             }
           }
         }
-        // 最后确保根节点总是被添加
         selectedNodes.add("1");
-
-        console.log("All connected nodes:", selectedNodes);
-
-        // 过滤数据集，包括所有找到的符合条件的节点及其连接
         let filteredData = dataset.filter((item) => {
           return (
             selectedNodes.has(item.id) ||
@@ -575,8 +5654,7 @@
               selectedNodes.has(item.to))
           );
         });
-
-        diagram.data.parse(filteredData); // 使用过滤后的数据重新加载图形
+        diagram.data.parse(filteredData);
       }
     </script>
 
@@ -592,10 +5670,6 @@
       .dhx_sample-widget {
         height: 100%;
       }
-
-      /* css template for DHTMLX Diagram */
-      /* the latest version is available here: https://snippet.dhtmlx.com/diagram_template_b */
-      /* you can find more css templates here: https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications/ */
       .dhx_diagram_template_b {
         position: relative;
         width: 100%;
