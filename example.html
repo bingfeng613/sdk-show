@@ -5935,7 +5935,7 @@
           // 统计2.1.1 2.1.1.1 只要id包含前面2.1这种的就是数据项
           // 需要将其2索引下的数量加1
           const parts = item.id.split(".");
-          if (parts.length === 3 || parts.length === 4) {
+          if ((parts.length === 3 || parts.length === 4) && (item.strokeWidth == 6)) {
             const sdkId = parts[0];
             if (!counts[sdkId]) {
               counts[sdkId] = 0;
