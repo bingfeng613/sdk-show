@@ -51,11 +51,12 @@
         "id": "2.1.1",
         "text": "位置信息",
         "parent": "2.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "2.1",
@@ -70,11 +71,12 @@
         "id": "2.1.2",
         "text": "应用列表",
         "parent": "2.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "2.1",
@@ -89,11 +91,12 @@
         "id": "2.1.3",
         "text": "剪切板信息",
         "parent": "2.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "2.1",
@@ -110,9 +113,10 @@
         "parent": "2.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1",
@@ -129,9 +133,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -148,9 +153,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -167,9 +173,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -186,9 +193,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -205,9 +213,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -224,9 +233,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -243,9 +253,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -262,9 +273,10 @@
         "parent": "2.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1.4",
@@ -281,9 +293,10 @@
         "parent": "2.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1",
@@ -300,13 +313,33 @@
         "parent": "2.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "2.1",
         "to": "2.1.6",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "2.1.7",
+        "text": "文件目录",
+        "parent": "2.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "2.1",
+        "to": "2.1.7",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -374,13 +407,33 @@
         "parent": "3.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "3.1",
         "to": "3.1.1",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "3.1.2",
+        "text": "位置信息",
+        "parent": "3.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "3.1",
+        "to": "3.1.2",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -448,9 +501,10 @@
         "parent": "4.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1",
@@ -467,9 +521,10 @@
         "parent": "4.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1",
@@ -486,9 +541,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -505,9 +561,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -524,9 +581,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -543,9 +601,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -562,9 +621,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -581,9 +641,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -600,9 +661,10 @@
         "parent": "4.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.2",
@@ -619,9 +681,10 @@
         "parent": "4.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1",
@@ -638,9 +701,10 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
@@ -657,9 +721,10 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
@@ -676,9 +741,10 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
@@ -695,9 +761,10 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
@@ -714,9 +781,10 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
@@ -733,9 +801,10 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
@@ -752,13 +821,33 @@
         "parent": "4.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "4.1.3",
         "to": "4.1.3.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "4.1.4",
+        "text": "文件目录",
+        "parent": "4.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "4.1",
+        "to": "4.1.4",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -809,11 +898,12 @@
         "id": "5.1.1",
         "text": "应用列表",
         "parent": "5.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "5.1",
@@ -828,11 +918,12 @@
         "id": "5.1.2",
         "text": "手机存储权限",
         "parent": "5.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "5.1",
@@ -849,9 +940,10 @@
         "parent": "5.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "5.1",
@@ -868,9 +960,10 @@
         "parent": "5.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "5.1.3",
@@ -887,9 +980,10 @@
         "parent": "5.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "5.1.3",
@@ -906,9 +1000,10 @@
         "parent": "5.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "5.1.3",
@@ -925,9 +1020,10 @@
         "parent": "5.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "5.1.3",
@@ -944,13 +1040,33 @@
         "parent": "5.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "5.1.3",
         "to": "5.1.3.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "5.1.4",
+        "text": "剪切板信息",
+        "parent": "5.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "5.1",
+        "to": "5.1.4",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -1016,11 +1132,12 @@
         "id": "6.1.1",
         "text": "应用列表",
         "parent": "6.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "6.1",
@@ -1037,9 +1154,10 @@
         "parent": "6.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "6.1",
@@ -1056,9 +1174,10 @@
         "parent": "6.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "6.1.2",
@@ -1073,11 +1192,12 @@
         "id": "6.1.3",
         "text": "手机存储信息",
         "parent": "6.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "6.1",
@@ -1149,9 +1269,10 @@
         "parent": "7.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "7.1",
@@ -1221,11 +1342,12 @@
         "id": "8.1.1",
         "text": "设备账户信息",
         "parent": "8.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1240,11 +1362,12 @@
         "id": "8.1.2",
         "text": "位置信息",
         "parent": "8.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1259,11 +1382,12 @@
         "id": "8.1.3",
         "text": "应用列表",
         "parent": "8.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1278,11 +1402,12 @@
         "id": "8.1.4",
         "text": "手机存储权限",
         "parent": "8.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1299,9 +1424,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1318,9 +1444,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1337,9 +1464,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1356,9 +1484,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1375,9 +1504,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1394,9 +1524,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1413,9 +1544,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1432,9 +1564,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1451,9 +1584,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1470,9 +1604,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1489,9 +1624,10 @@
         "parent": "8.1.5",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.5",
@@ -1508,9 +1644,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1527,9 +1664,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1546,9 +1684,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1565,9 +1704,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1584,9 +1724,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1603,9 +1744,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1622,9 +1764,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1641,9 +1784,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1660,9 +1804,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1679,9 +1824,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1698,9 +1844,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1717,9 +1864,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1736,9 +1884,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1755,9 +1904,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1774,9 +1924,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1793,9 +1944,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1812,9 +1964,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1831,9 +1984,10 @@
         "parent": "8.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1",
@@ -1850,9 +2004,10 @@
         "parent": "8.1.23",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.23",
@@ -1869,9 +2024,10 @@
         "parent": "8.1.23",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.23",
@@ -1888,9 +2044,10 @@
         "parent": "8.1.23",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "8.1.23",
@@ -1962,9 +2119,10 @@
         "parent": "9.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1",
@@ -1979,11 +2137,12 @@
         "id": "9.1.2",
         "text": "应用列表",
         "parent": "9.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1",
@@ -1998,11 +2157,12 @@
         "id": "9.1.3",
         "text": "设备信息",
         "parent": "9.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1",
@@ -2017,11 +2177,12 @@
         "id": "9.1.3.1",
         "text": "IMSI",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2036,11 +2197,12 @@
         "id": "9.1.3.2",
         "text": "IMEI",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2055,11 +2217,12 @@
         "id": "9.1.3.3",
         "text": "MAC",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2074,11 +2237,12 @@
         "id": "9.1.3.4",
         "text": "BSSID",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2093,11 +2257,12 @@
         "id": "9.1.3.5",
         "text": "SSID",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2112,11 +2277,12 @@
         "id": "9.1.3.6",
         "text": "IDFA",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2131,11 +2297,12 @@
         "id": "9.1.3.7",
         "text": "AndroidID",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2150,11 +2317,12 @@
         "id": "9.1.3.8",
         "text": "MEID",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2169,11 +2337,12 @@
         "id": "9.1.3.9",
         "text": "OAID",
         "parent": "9.1.3",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.3",
@@ -2190,9 +2359,10 @@
         "parent": "9.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1",
@@ -2209,9 +2379,10 @@
         "parent": "9.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.4",
@@ -2228,9 +2399,10 @@
         "parent": "9.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.4",
@@ -2247,9 +2419,10 @@
         "parent": "9.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1",
@@ -2266,9 +2439,10 @@
         "parent": "9.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1",
@@ -2285,9 +2459,10 @@
         "parent": "9.1.6",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.6",
@@ -2304,9 +2479,10 @@
         "parent": "9.1.6",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.6",
@@ -2323,9 +2499,10 @@
         "parent": "9.1.6",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.6",
@@ -2342,9 +2519,10 @@
         "parent": "9.1.6",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.6",
@@ -2361,13 +2539,33 @@
         "parent": "9.1.6",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "9.1.6",
         "to": "9.1.6.5",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "9.1.7",
+        "text": "文件目录",
+        "parent": "9.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "9.1",
+        "to": "9.1.7",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -2433,11 +2631,12 @@
         "id": "10.1.1",
         "text": "位置信息",
         "parent": "10.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2454,9 +2653,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2473,9 +2673,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2492,9 +2693,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2511,9 +2713,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2530,9 +2733,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2549,9 +2753,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2568,9 +2773,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2587,9 +2793,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2606,9 +2813,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2625,9 +2833,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2644,9 +2853,10 @@
         "parent": "10.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.2",
@@ -2663,9 +2873,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2682,9 +2893,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2701,9 +2913,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2720,9 +2933,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2739,9 +2953,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2758,9 +2973,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2777,9 +2993,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2796,9 +3013,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2815,9 +3033,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2834,9 +3053,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2853,9 +3073,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2872,9 +3093,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2891,9 +3113,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2910,9 +3133,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2929,9 +3153,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2948,9 +3173,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2967,9 +3193,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -2986,9 +3213,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -3005,9 +3233,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -3024,9 +3253,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -3043,9 +3273,10 @@
         "parent": "10.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1",
@@ -3062,9 +3293,10 @@
         "parent": "10.1.23",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.23",
@@ -3081,9 +3313,10 @@
         "parent": "10.1.23",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.23",
@@ -3100,9 +3333,10 @@
         "parent": "10.1.23",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "10.1.23",
@@ -3172,11 +3406,12 @@
         "id": "11.1.1",
         "text": "位置信息",
         "parent": "11.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "11.1",
@@ -3191,11 +3426,12 @@
         "id": "11.1.2",
         "text": "应用列表",
         "parent": "11.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "11.1",
@@ -3212,9 +3448,10 @@
         "parent": "11.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1",
@@ -3231,9 +3468,10 @@
         "parent": "11.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1.3",
@@ -3250,9 +3488,10 @@
         "parent": "11.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1.3",
@@ -3269,9 +3508,10 @@
         "parent": "11.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1.3",
@@ -3288,9 +3528,10 @@
         "parent": "11.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1.3",
@@ -3307,9 +3548,10 @@
         "parent": "11.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1.3",
@@ -3326,9 +3568,10 @@
         "parent": "11.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "11.1.3",
@@ -3343,15 +3586,35 @@
         "id": "11.1.4",
         "text": "手机存储权限",
         "parent": "11.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "11.1",
         "to": "11.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "11.1.5",
+        "text": "文件目录",
+        "parent": "11.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "11.1",
+        "to": "11.1.5",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -3419,9 +3682,10 @@
         "parent": "12.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "12.1",
@@ -3438,9 +3702,10 @@
         "parent": "12.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "12.1.1",
@@ -3457,9 +3722,10 @@
         "parent": "12.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "12.1.1",
@@ -3476,9 +3742,10 @@
         "parent": "12.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "12.1.1",
@@ -3495,9 +3762,10 @@
         "parent": "12.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "12.1",
@@ -3512,11 +3780,12 @@
         "id": "12.1.3",
         "text": "手机存储信息",
         "parent": "12.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "12.1",
@@ -3586,11 +3855,12 @@
         "id": "13.1.1",
         "text": "应用列表",
         "parent": "13.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
@@ -3605,11 +3875,12 @@
         "id": "13.1.2",
         "text": "位置信息",
         "parent": "13.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
@@ -3626,9 +3897,10 @@
         "parent": "13.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
@@ -3645,9 +3917,10 @@
         "parent": "13.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1.3",
@@ -3664,9 +3937,10 @@
         "parent": "13.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1.3",
@@ -3683,9 +3957,10 @@
         "parent": "13.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1.3",
@@ -3702,9 +3977,10 @@
         "parent": "13.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1.3",
@@ -3721,9 +3997,10 @@
         "parent": "13.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1.3",
@@ -3740,9 +4017,10 @@
         "parent": "13.1.3",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1.3",
@@ -3759,9 +4037,10 @@
         "parent": "13.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
@@ -3778,9 +4057,10 @@
         "parent": "13.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
@@ -3795,11 +4075,12 @@
         "id": "13.1.6",
         "text": "图片",
         "parent": "13.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
@@ -3814,15 +4095,35 @@
         "id": "13.1.7",
         "text": "视频",
         "parent": "13.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "13.1",
         "to": "13.1.7",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "13.1.8",
+        "text": "文件目录",
+        "parent": "13.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "13.1",
+        "to": "13.1.8",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -3888,11 +4189,12 @@
         "id": "14.1.1",
         "text": "应用列表",
         "parent": "14.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "14.1",
@@ -3909,9 +4211,10 @@
         "parent": "14.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1",
@@ -3928,9 +4231,10 @@
         "parent": "14.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1.2",
@@ -3947,9 +4251,10 @@
         "parent": "14.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1.2",
@@ -3966,9 +4271,10 @@
         "parent": "14.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1.2",
@@ -3985,9 +4291,10 @@
         "parent": "14.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1.2",
@@ -4004,9 +4311,10 @@
         "parent": "14.1.2",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1.2",
@@ -4023,9 +4331,10 @@
         "parent": "14.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "14.1",
@@ -4097,9 +4406,10 @@
         "parent": "15.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1",
@@ -4116,9 +4426,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4135,9 +4446,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4154,9 +4466,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4173,9 +4486,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4192,9 +4506,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4211,9 +4526,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4230,9 +4546,10 @@
         "parent": "15.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "15.1.1",
@@ -4247,11 +4564,12 @@
         "id": "15.1.2",
         "text": "位置信息",
         "parent": "15.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "15.1",
@@ -4266,11 +4584,12 @@
         "id": "15.1.3",
         "text": "应用列表",
         "parent": "15.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "15.1",
@@ -4285,15 +4604,35 @@
         "id": "15.1.4",
         "text": "音频",
         "parent": "15.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "15.1",
         "to": "15.1.4",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "15.1.5",
+        "text": "文件目录",
+        "parent": "15.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "15.1",
+        "to": "15.1.5",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -4361,9 +4700,10 @@
         "parent": "16.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1",
@@ -4380,9 +4720,10 @@
         "parent": "16.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1.1",
@@ -4399,9 +4740,10 @@
         "parent": "16.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1.1",
@@ -4418,9 +4760,10 @@
         "parent": "16.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1.1",
@@ -4437,9 +4780,10 @@
         "parent": "16.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1.1",
@@ -4456,9 +4800,10 @@
         "parent": "16.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1",
@@ -4475,9 +4820,10 @@
         "parent": "16.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1",
@@ -4494,9 +4840,10 @@
         "parent": "16.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "16.1",
@@ -4568,9 +4915,10 @@
         "parent": "17.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1",
@@ -4587,9 +4935,10 @@
         "parent": "17.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.1",
@@ -4606,9 +4955,10 @@
         "parent": "17.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.1",
@@ -4625,9 +4975,10 @@
         "parent": "17.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.1",
@@ -4644,9 +4995,10 @@
         "parent": "17.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.1",
@@ -4661,11 +5013,12 @@
         "id": "17.1.2",
         "text": "应用列表",
         "parent": "17.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "17.1",
@@ -4680,11 +5033,12 @@
         "id": "17.1.3",
         "text": "手机存储权限",
         "parent": "17.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "17.1",
@@ -4701,9 +5055,10 @@
         "parent": "17.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1",
@@ -4720,9 +5075,10 @@
         "parent": "17.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.4",
@@ -4739,9 +5095,10 @@
         "parent": "17.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.4",
@@ -4758,13 +5115,33 @@
         "parent": "17.1.4",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "17.1.4",
         "to": "17.1.4.3",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "17.1.5",
+        "text": "IDFA",
+        "parent": "17.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "17.1",
+        "to": "17.1.5",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -4830,11 +5207,12 @@
         "id": "18.1.1",
         "text": "设备信息",
         "parent": "18.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "18.1",
@@ -4849,11 +5227,12 @@
         "id": "18.1.1.1",
         "text": "IMEI",
         "parent": "18.1.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "18.1.1",
@@ -4868,11 +5247,12 @@
         "id": "18.1.1.2",
         "text": "MEID",
         "parent": "18.1.1",
-        "fill": "#fff",
+        "fill": "#D73C2D",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "18.1.1",
@@ -4887,11 +5267,12 @@
         "id": "18.1.2",
         "text": "位置信息",
         "parent": "18.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "18.1",
@@ -4906,11 +5287,12 @@
         "id": "18.1.3",
         "text": "应用列表",
         "parent": "18.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "18.1",
@@ -4927,9 +5309,10 @@
         "parent": "18.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "18.1",
@@ -4986,9 +5369,10 @@
         "parent": "19.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "19.1",
@@ -5005,9 +5389,10 @@
         "parent": "19.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "19.1.1",
@@ -5024,9 +5409,10 @@
         "parent": "19.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "19.1.1",
@@ -5043,9 +5429,10 @@
         "parent": "19.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "19.1.1",
@@ -5060,15 +5447,35 @@
         "id": "19.1.2",
         "text": "手机存储",
         "parent": "19.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "19.1",
         "to": "19.1.2",
+        "type": "line",
+        "connectType": "curved",
+        "stroke": "#CCC",
+        "strokeWidth": 2,
+        "cornersRadius": 0
+    },
+    {
+        "id": "19.1.3",
+        "text": "剪切板信息",
+        "parent": "19.1",
+        "fontColor": "rgba(0,0,0,0.70)",
+        "stroke": "#2349AE",
+        "headerColor": "#00C7B5",
+        "strokeType": "dash",
+        "strokeWidth": 6
+    },
+    {
+        "from": "19.1",
+        "to": "19.1.3",
         "type": "line",
         "connectType": "curved",
         "stroke": "#CCC",
@@ -5136,9 +5543,10 @@
         "parent": "20.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "20.1",
@@ -5210,9 +5618,10 @@
         "parent": "21.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "21.1",
@@ -5229,9 +5638,10 @@
         "parent": "21.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "21.1.1",
@@ -5248,9 +5658,10 @@
         "parent": "21.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "21.1.1",
@@ -5267,9 +5678,10 @@
         "parent": "21.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "21.1.1",
@@ -5286,9 +5698,10 @@
         "parent": "21.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "21.1.1",
@@ -5305,9 +5718,10 @@
         "parent": "21.1.1",
         "fill": "#fff",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 1,
+        "stroke": "#000000"
     },
     {
         "from": "21.1.1",
@@ -5322,11 +5736,12 @@
         "id": "21.1.2",
         "text": "运营商信息",
         "parent": "21.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "21.1",
@@ -5396,11 +5811,12 @@
         "id": "22.1.1",
         "text": "手机存储信息",
         "parent": "22.1",
-        "fill": "#fff",
+        "fill": "#2349AE",
         "fontColor": "rgba(0,0,0,0.70)",
-        "stroke": "#00C7B5",
         "headerColor": "#00C7B5",
-        "strokeType": "line"
+        "strokeType": "line",
+        "strokeWidth": 6,
+        "stroke": "#000000"
     },
     {
         "from": "22.1",
