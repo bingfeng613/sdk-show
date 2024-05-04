@@ -149,23 +149,20 @@ for sdk in original_data:
             "id": sdk_id,
             "text": sdk["sdk-name"],
             "parent": "1",
-            "fill": "#11B3A5",
+            "fill": "#005B4F",
             "fontColor": "#FFFFFF",
-            "stroke": "#11B3A5",
+            "stroke": "#005B4F",
+            "fontWeight": "bold",
+            "type": "topic",
+            "lineHeight": 14,
+            "fontSize": 14,
+            "textAlign": "center",
+            "fontStyle": "normal",
+            "textVerticalAlign": "center",
+            "strokeWidth": 1,
+            "strokeType": "line",
             "dir": direction,
             "headerColor": "#607D8B",
-            "fontWeight": "bold",
-        }
-    )
-    mind_map.append(
-        {
-            "from": "1",
-            "to": sdk_id,
-            "type": "line",
-            "connectType": "curved",
-            "stroke": "#CCC",
-            "strokeWidth": 2,
-            "cornersRadius": 0,
         }
     )
 
@@ -180,23 +177,21 @@ for sdk in original_data:
             "id": sdk_data_id,
             "text": "数据项",
             "parent": sdk_id,
-            "fill": "#fff",
-            "fontColor": "rgba(0,0,0,0.70)",
-            "stroke": "#00C7B5",
-            "headerColor": "#00C7B5",
+            "fill": "#11B3A3",
+            "fontColor": "#FFFFFF",
+            "stroke": "#11B3A5",
+            "dir": "verticalRight",
+            "headerColor": "#607D8B",
+            "fontWeight": "bold",
+            "type": "topic",
+            "lineHeight": 14,
+            "fontSize": 14,
+            "textAlign": "center",
+            "fontStyle": "normal",
+            "textVerticalAlign": "center",
+            "strokeWidth": 1,
             "strokeType": "line",
             "open": False,
-        }
-    )
-    mind_map.append(
-        {
-            "from": sdk_id,
-            "to": sdk_data_id,
-            "type": "line",
-            "connectType": "curved",
-            "stroke": "#CCC",
-            "strokeWidth": 2,
-            "cornersRadius": 0,
         }
     )
 
@@ -217,17 +212,14 @@ for sdk in original_data:
         """
         # 进行节点的颜色变换
         fill_color = "#fff"
-        strokeWidth = 1
         print("fuzzy_data_hash:",fuzzy_data_hash)
         print("more_data_hash:",more_data_hash)
 
         if fuzzy_data_hash.get(item["main"])  == 1:
-            fill_color = "#2349AE"  # 模糊的使用填充蓝色
-            strokeWidth = 6
+            fill_color = "#F3EADA"  # 模糊的使用填充蓝色
 
         if more_data_hash.get(item["main"]) == 1:
-            fill_color = "#D73C2D"  # 多说的使用填充红色
-            strokeWidth = 6
+            fill_color = "#FFA07A"  # 多说的使用填充红色
 
         mind_map.append(
             {
@@ -236,23 +228,16 @@ for sdk in original_data:
                 "parent": sdk_data_id,
                 "fill": fill_color,
                 "fontColor": "rgba(0,0,0,0.70)",
+                "stroke": "#FFA07A",
+                "dir": "verticalRight",
                 "headerColor": "#00C7B5",
                 "strokeType": "line",
-                "strokeWidth": strokeWidth,  # 边框线宽
-                "stroke": "#000000",
-            }
-        )
-
-        # Append the connection line
-        mind_map.append(
-            {
-                "from": sdk_data_id,
-                "to": sdk_data_sub_id,
-                "type": "line",
-                "connectType": "curved",
-                "stroke": "#CCC",
-                "strokeWidth": 2,
-                "cornersRadius": 0,
+                "type": "topic",
+                "lineHeight": 14,
+                "fontSize": 14,
+                "textAlign": "center",
+                "fontStyle": "normal",
+                "textVerticalAlign": "center",
             }
         )
 
@@ -269,23 +254,16 @@ for sdk in original_data:
                         "parent": sdk_data_sub_id,
                         "fill": fill_color,
                         "fontColor": "rgba(0,0,0,0.70)",
+                        "stroke": "#FFA07A",
+                        "dir": "verticalRight",
                         "headerColor": "#00C7B5",
                         "strokeType": "line",
-                        "strokeWidth": strokeWidth,  # 边框线宽
-                        "stroke": "#000000",
-                    }
-                )
-
-                # Append the connection line
-                mind_map.append(
-                    {
-                        "from": sdk_data_sub_id,
-                        "to": sdk_data_sub_id + "." + str(data_sub_sub_start),
-                        "type": "line",
-                        "connectType": "curved",
-                        "stroke": "#CCC",
-                        "strokeWidth": 2,
-                        "cornersRadius": 0,
+                        "type": "topic",
+                        "lineHeight": 14,
+                        "fontSize": 14,
+                        "textAlign": "center",
+                        "fontStyle": "normal",
+                        "textVerticalAlign": "center",
                     }
                 )
                 data_sub_sub_start += 1
@@ -304,24 +282,19 @@ for sdk in original_data:
                 "id": sdk_data_sub_id,
                 "text": item["main"],
                 "parent": sdk_data_id,
+                "fill": "#fff",
                 "fontColor": "rgba(0,0,0,0.70)",
-                "stroke": "#2349AE",
+                "stroke": "#00C7B5",
+                "dir": "verticalRight",
                 "headerColor": "#00C7B5",
-                "strokeType": "dash",  # 虚线样式
-                "strokeWidth": 6,  # 边框线宽
-            }
-        )
-
-        # Append the connection line
-        mind_map.append(
-            {
-                "from": sdk_data_id,
-                "to": sdk_data_sub_id,
-                "type": "line",
-                "connectType": "curved",
-                "stroke": "#CCC",
-                "strokeWidth": 2,
-                "cornersRadius": 0,
+                "strokeType": "dash",
+                "type": "topic",
+                "lineHeight": 14,
+                "fontSize": 14,
+                "textAlign": "center",
+                "fontStyle": "normal",
+                "textVerticalAlign": "center",
+                "strokeWidth": "3",
             }
         )
 
@@ -336,26 +309,23 @@ for sdk in original_data:
                         "id": sdk_data_sub_id + "." + str(data_sub_sub_start),
                         "text": sub_data,
                         "parent": sdk_data_sub_id,
+                        "fill": "#fff",
                         "fontColor": "rgba(0,0,0,0.70)",
-                        "stroke": "#2349AE",
+                        "stroke": "#00C7B5",
+                        "dir": "verticalRight",
                         "headerColor": "#00C7B5",
-                        "strokeType": "dash",  # 虚线样式
-                        "strokeWidth": 6,  # 边框线宽
+                        "strokeType": "dash",
+                        "type": "topic",
+                        "lineHeight": 14,
+                        "fontSize": 14,
+                        "textAlign": "center",
+                        "fontStyle": "normal",
+                        "textVerticalAlign": "center",
+                        "strokeWidth": "3",
                     }
                 )
 
                 # Append the connection line
-                mind_map.append(
-                    {
-                        "from": sdk_data_sub_id,
-                        "to": sdk_data_sub_id + "." + str(data_sub_sub_start),
-                        "type": "line",
-                        "connectType": "curved",
-                        "stroke": "#CCC",
-                        "strokeWidth": 2,
-                        "cornersRadius": 0,
-                    }
-                )
                 data_sub_sub_start += 1
 
         data_sub_start += 1
@@ -374,17 +344,6 @@ for sdk in original_data:
                 "type": "customNode",
                 "url": sdk["url"][0],  # 安全地访问第一个元素
                 "parent": sdk_id,
-            }
-        )
-        mind_map.append(
-            {
-                "from": sdk_id,
-                "to": sdk_url_id,
-                "type": "line",
-                "connectType": "curved",
-                "stroke": "#CCC",
-                "strokeWidth": 2,
-                "cornersRadius": 0,
             }
         )
     else:
