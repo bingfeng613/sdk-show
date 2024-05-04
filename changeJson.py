@@ -49,7 +49,7 @@ with open(file_path, "r", encoding="utf-8") as file:
 mind_map = [
     {
         "id": "1",
-        "text": "sdk展示根节点（可换名）",
+        "text": "SDK隐私政策信息",
         "fill": "#0288D1",
         "fontColor": "#FFFFFF",
         "stroke": "#0288D1",
