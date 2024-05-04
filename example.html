@@ -5243,7 +5243,7 @@
 
           const sdkData = document.createElement("div");
           sdkData.className = "sdk-data";
-          sdkData.innerHTML = `<p>更多: ${data.more}</p><p>模糊: ${data.fuzzy}</p><p>较少: ${data.less}</p>`;
+          sdkData.innerHTML = `<p>多余: ${data.more}</p><p>模糊: ${data.fuzzy}</p><p>缺失: ${data.less}</p>`;
           sdkDetail.appendChild(sdkData);
 
           detailsContainer.appendChild(sdkDetail);
@@ -5595,9 +5595,13 @@
       }
 
       .legend-item,
-      .statistics-details .sdk-detail {
+      {
         display: flex;
         align-items: center;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+        .statistics-details.sdk-detail {
         font-size: 14px;
         margin-bottom: 5px;
       }
