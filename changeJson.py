@@ -57,9 +57,13 @@ mind_map = [
     }
 ]
 
+
 next_id = 2  # Resetting next_id for node creation
 
 total_counts = {}  # 统计不合法 数据项数量 sdk-name : numbers
+
+
+# 初始化全部的统计信息
 
 # Populate the mind map with data from each SDK
 for sdk in original_data:
@@ -123,16 +127,19 @@ for sdk in original_data:
                 count_more_items += 1
                 more_data_hash[more_item["main"]] = 1
 
-    print("count_more_items:", count_more_items)
-    print("count_less_items:", count_less_items)
-    print("count_fuzzy_items:", count_fuzzy_items)
+    # print("count_more_items:", count_more_items)
+    # print("count_less_items:", count_less_items)
+    # print("count_fuzzy_items:", count_fuzzy_items)
 
     """
         记录全部的数量 到哈希表中
     """
-    total_counts[sdk["sdk-name"]] = (
-        count_more_items + count_less_items + count_fuzzy_items
-    )
+    total_counts[sdk["sdk-name"]] = {
+        "more": count_more_items,
+        "fuzzy": count_fuzzy_items,
+        "less": count_less_items,
+        "total": count_more_items + count_less_items + count_fuzzy_items,
+    }
 
     # start from id=2
     # add sdk-name entry
@@ -212,14 +219,12 @@ for sdk in original_data:
         """
         # 进行节点的颜色变换
         fill_color = "#fff"
-        print("fuzzy_data_hash:",fuzzy_data_hash)
-        print("more_data_hash:",more_data_hash)
 
         if fuzzy_data_hash.get(item["main"])  == 1:
             fill_color = "#F3EADA"  # 模糊的使用填充蓝色
 
         if more_data_hash.get(item["main"]) == 1:
-            fill_color = "#FFA07A"  # 多说的使用填充红色
+            fill_color = "#FFA17A"  # 多说的使用填充红色
 
         mind_map.append(
             {
@@ -352,9 +357,17 @@ for sdk in original_data:
 
     next_id += 1
 
+# Sorting by the total number of illegal data entries in descending order
+sorted_sdk_counts = dict(
+    sorted(total_counts.items(), key=lambda item: item[1]["total"], reverse=True)
+)
+# Create statistics summary
+stats = {"total_sdks": len(sorted_sdk_counts), "details": sorted_sdk_counts}
+
+output_data = {"statistics": stats, "mindMap": mind_map}
 
 """
     写入转换格式后的json文件
 """
 with open("afterTreeData.json", "w", encoding="utf-8") as file:
-    json.dump(mind_map, file, ensure_ascii=False, indent=4)
+    json.dump(output_data, file, ensure_ascii=False, indent=4)
