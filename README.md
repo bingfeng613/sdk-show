@@ -6,6 +6,7 @@
 
 ![alt text](image-1.png)
 
+![alt text](image-2.png)
 ### 原始json文件结构说明：
 sdk-name 第三方sdk名称
 data 数据项 需要按照顿号进行分隔（在括号内的需要进行分叉）
