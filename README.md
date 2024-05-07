@@ -34,4 +34,3 @@ sdk-url-judge：判断隐私政策链接是否适用于sdk（是sdk隐私政策�
 
 ### 缺陷
 1. 由于CROS限制 无法访问本地文件 如果想要生成新的afterTreeData.json进行展示，需要执行python changeJson.py，将转换后的json文件结果复制到example.html的dataset字段进行展示，该问题属于次要矛盾后续再进行解决，在开发过程中首先进行数据效果的展示和调整
-
